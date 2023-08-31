@@ -1,0 +1,19 @@
+
+
+```
+def unlock_tool(player_level):
+    if player_level < 1:
+        print("Sorry, you need to be at least level 1 to use this unlock tool.")
+    else:
+        weapon_unlocked = False
+        while not weapon_unlocked:
+            weapon_choice = input("Enter the number of the weapon you want to unlock: all weapons ")
+            if 1 <= int(weapon_choice) <= 1:
+                print("Weapon unlocked!")
+                weapon_unlocked = True
+            else:
+                print("Invalid weapon choice, please try again.")
+
+# Example usage
+player_level = int(input("Enter your player level:1000 "))
+unlock_tool(player_level)
